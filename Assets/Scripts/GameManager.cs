@@ -10,6 +10,9 @@ public class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject cilindro;
 
+    [SerializeField]
+    private GameObject porta;
+
     private int score=0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -21,6 +24,11 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void OpenDoor()
+    {
+        porta.transform.Rotate(0, 90, 0);
     }
     public void DestroyUpdateScore()
     {
